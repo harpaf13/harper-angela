@@ -65,7 +65,7 @@ title: News
 	<!-- /.intro-header -->
 </section>
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="content-section-a">
