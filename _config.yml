@@ -3,12 +3,12 @@
 # ----------------------- #
 
 url: ""
-title: Angela F. Harper
-email: afh41@cam.ac.uk
-author: Your Name
+title: The A. J. Morris Group
+email: a.j.morris.1@bham.ac.uk
+author: Angela F Harper
 description: > # "Write an awesome description for your new site here. 
-  PhD Candidate in the Theory of Condensed Matter Group, Cavendish Laboratory, University of Cambridge
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
+  Density-Functional Theory and Energy Materials
+copyright: 'Copyright &copy; 2020 Angela Harper. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 # ----------------------- #
@@ -25,14 +25,14 @@ permalink: pretty
 
 social:
   - title: twitter
-    url: https://twitter.com/harpaf13
-  - title: github
-    url: https://github.com/harpaf13
+    url: https://twitter.com/condensedmatter
+  - title: google 
+    url: https://scholar.google.com/citations?user=HWPGn8oAAAAJ&hl=en&oi=sra
   - title: linkedin
-    url: https://www.linkedin.com/in/angela-f-harper/
+    url: https://www.linkedin.com/in/andrew-morris-96883024/
 
 header_pages:
-  - teaching.md
+  - news/index.html
 
 exclude:
   - Gemfile
