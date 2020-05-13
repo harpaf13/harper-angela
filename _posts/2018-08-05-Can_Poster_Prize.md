@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Can wins a poster prize at Physics by the Lake!"
 date:   2018-08-05 00:00:00 +0100
 categories: news

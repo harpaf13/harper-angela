@@ -1,5 +1,4 @@
 ---                                                                                                                                                                                      
-layout: post                                                                                                                                                                             
 categories: news                                                                                                                                                                 
 date:  2020-01-15 00:00:01 +0000                                                                                                                                                        
 title: "Andrew's collaboration with the Friscic group at McGill published in Nature Communications and featured in Quebec Science"

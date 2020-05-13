@@ -1,5 +1,4 @@
 ---                                                                                                                                                                                      
-layout: post                                                                                                                                                                             
 categories: news                                                                                                                                                                 
 date:  2018-12-14 00:00:01 +0000                                                                                                                                                        
 title: "First CASTEP Users Workshop to be held in Birmingham 18<sup>th</sup> - 19<sup>th</sup> March"

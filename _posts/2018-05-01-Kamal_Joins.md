@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "New PDRA Kamal Goswami joins the group at Birmingham"
 date:   2018-05-01 00:00:00 +0100
 categories: news

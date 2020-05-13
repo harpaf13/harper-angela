@@ -1,5 +1,4 @@
 ---                                                                                                                                                                                      
-layout: post                                                                                                                                                                             
 categories: news                                                                                                                                                                 
 date:  2020-01-10 00:00:01 +0000                                                                                                                                                        
 title: "Angela featured in a Women in STEM interview with the University of Cambridge"

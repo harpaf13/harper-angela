@@ -1,5 +1,4 @@
 ---                                                                                                                                                                                      
-layout: post                                                                                                                                                                             
 categories: news                                                                                                                                                                 
 date:  2019-03-20 00:00:01 +0000                                                                                                                                                        
 title: "First CASTEP Users Meeting in Birmingham is a Great Success!"

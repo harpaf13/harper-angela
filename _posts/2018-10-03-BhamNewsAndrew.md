@@ -1,5 +1,4 @@
 ---                                                                                                                                                                                      
-layout: post                                                                                                                                                                             
 categories: news                                                                                                                                                                 
 date:  2018-10-02 00:00:01 +0000                                                                                                                                                        
 title: "Andrew is mentioned in a news article on 1D materials at the University of Birmingham"
