@@ -64,64 +64,63 @@ title: News
 	</div>
 	<!-- /.intro-header -->
 </section>
-{% for post in site.posts %}
-  {% if post.categories contains 'news' %}
-      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-        {% if thecycle == 'odd' %}
-        <div class="content-section-a">
 
-            <div class="container">
+{% for post in site.posts limit:3 %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
 
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">{{ post.title }}<h3>{{post.date | date: '%d %B %Y'}}</h3></h2>
-                        <div class="lead">
-                        {{ post.content }}
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <!-- again this is really bad to just put brs there -->
-                        <br><br><br>
-                        <br><br>
-                        <img class="img-responsive" src="{{ post.photo }}" alt="">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}<h3>{{post.date | date: '%d %B %Y'}}</h3></h2>
+                    <div class="lead">
+                    {{ post.content | truncatewords: 50}}
                     </div>
                 </div>
-
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <!-- again this is really bad to just put brs there -->
+                    <br><br><br>
+                    <br><br>
+                    <img class="img-responsive" src="{{ post.photo }}" alt="">
+                </div>
             </div>
-            <!-- /.container -->
 
         </div>
-        <!-- /.content-section-a -->
-        {% else %}
+        <!-- /.container -->
 
-        <div class="content-section-b">
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
 
-            <div class="container">
+    <div class="content-section-b">
 
-                <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">{{ post.title }}<h3>{{post.date | date: '%d %B %Y'}}</h3></h2>
-                        <div class="lead">
-                        {{ post.content }}
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <br><br><br>
-                        <br><br>
-                      <img class="img-responsive" src="{{ post.photo }}" alt="">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}<h3>{{post.date | date: '%d %B %Y'}}</h3></h2>
+                    <div class="lead">
+                    {{ post.content | truncatewords: 50}}
                     </div>
                 </div>
-
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <br><br><br>
+                    <br><br>
+                  <img class="img-responsive" src="{{ post.photo }}" alt="">
+                </div>
             </div>
-            <!-- /.container -->
 
         </div>
-        <!-- /.content-section-b -->
-        {% endif %}
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
     {% endif %}
 {% endfor %}
 
