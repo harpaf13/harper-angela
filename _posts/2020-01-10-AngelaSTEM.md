@@ -3,7 +3,7 @@ categories: news
 date:  2020-01-10 00:00:01 +0000                                                                                                                                                        
 title: "Angela featured in a Women in STEM interview with the University of Cambridge"
 
-photo: "https://www.cam.ac.uk/sites/www.cam.ac.uk/files/styles/section-landing-page-250x250/public/news/research/news/crop_168.jpg?itok=knYm8DY4"
+photo: "images/cropafh.jpg"
 
 ---            
 

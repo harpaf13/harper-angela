@@ -3,7 +3,7 @@ categories: news
 date:  2018-12-11 00:00:01 +0000                                                                                                                                                        
 title: "Morris Group recognised as “Emerging Investigators in Solid-State Inorganic Chemistry” in ACS Virtual Issue"
 
-photo: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/American_Chemical_Society_logo.svg/180px-American_Chemical_Society_logo.svg.png"
+photo: "images/acs.png"
 ---            
 
 

@@ -3,7 +3,7 @@ categories: news
 date:  2020-01-15 00:00:01 +0000                                                                                                                                                        
 title: "Andrew's collaboration with the Friscic group at McGill published in Nature Communications and featured in Quebec Science"
 
-photo: "https://www.quebecscience.qc.ca/wp-content/uploads/2020/01/molecule-cristal.jpg"
+photo: "images/molecule-cristal.jpg"
 
 ---            
 
