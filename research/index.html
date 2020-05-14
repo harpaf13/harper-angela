@@ -1,0 +1,250 @@
+---
+layout: none
+title: Research
+---
+
+<!-- Bootstrap Core CSS -->
+<link href="{{ site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="{{ site.baseurl}}/css/landing-page.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="{{ site.baseurl}}/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="../index.html">{{ site.title }}</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">  
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a>|</a>
+                </li>
+                <li>
+                    <a href="../people/index.html">People</a>
+                </li>
+                <li>
+                    <a href="../publications/index.html">Publications</a>
+                </li>
+                <li>
+                    <a href="#home">Research</a>
+                </li>
+                <li>
+                    <a href="../code/index.html">Code</a>
+                </li>
+                <li>
+                    <a href="../news/index.html">News Archive</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<section id="home">
+<!-- Header -->
+	<div class="intro-header">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-1">
+					<div class="intro-message">
+						<h1>{{ page.title }}</h1>
+						<h3>{{ page.subTitle }}</h3>
+						<hr class="intro-divider">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+	<!-- /.intro-header -->
+</section>
+<div class="content-section-a">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+    <div style="float: center; background: lightgrey; border: 10px solid lightgrey;text-align: justify">
+        <h1>Plain English</h1>
+
+        The creation of new materials is both difficult and expensive. It is very difficult to “see” the structure of these materials over the length scales that they work and very expensive to create prototype materials to test. Whilst experimental physics can use x-rays, high energy electrons or neutrons to infer the structure of these materials, this inference is made much more robust when combined with theoretical predictions of the kinds of structures that can be formed. In a computer we use quantum mechanical calculations to simulate the results of these kinds of experiments, helping to understand materials and suggest new materials with the kind of properties desired.
+    </div>
+
+    <h1 id="battery-materials-modelling">Battery Materials Modelling</h1>
+    <p><img src="/images/batteries.png" alt="Li-ion Intercalation Materials" style="float: left;margin-right: 7px;margin-top: 7px;width: 350px" /></p>
+
+    <p>Silicon is the next wonder material for lithium-ion batteries, having a theoretical capacity some 10 times greater than the current graphitic anode. However, there are many obstacles to be overcome such as anode pulverisation, irreversible lithium losses and huge volume changes before the their potential.</p>
+
+    <p>Over the course of the project we have found new phases of lithium silicides, lithium germanides, lithium phosphides and lithium sulphides, including new defect and high-pressure phases.</p>
+
+    <p><strong>Current Project Members:</strong></p>
+
+    <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;Matthew Evans
+        &nbsp;&nbsp;&nbsp;&nbsp;Can Kocer
+        &nbsp;&nbsp;&nbsp;&nbsp;Angela Harper
+    </ul>
+
+    <p><strong>Collaborators:</strong></p>
+
+    <p>We have a long running collaboration with <a href="https://www.ch.cam.ac.uk/group/grey/">Prof Clare Grey</a> and <a href="https://www.msm.cam.ac.uk/people/pickard">Prof Chris Pickard</a> using the <em>ab initio</em> random structure searching method (AIRSS) to predict the stable phases of electrodes that occur as a lithium-ion battery charges.</p>
+
+    <h1 id="encapsulation-in-nanotubes">Encapsulation in Nanotubes</h1>
+    <p><img src="/images/nanowires.png" alt="Gorgeous Nanowire Image" style="float: right;margin-right: 30px;margin-top: 0px;height: 200px" /></p>
+
+    <p>Particularly exciting recent work by Jeremy Sloan has demonstrated the possibility of nanowires undergoing transitions between nano-crystalline structures with markedly different properties, in response to bending strain in the CNT. These “phase change” properties open the way for nanoscale electromechanical switches and non-volatile memory, as well as providing a playground for fundamental studies of phase changes at the smallest length scale possible in a material.</p>
+
+    <p>Our aim with the current project, inspired by these results, is to develop a computational modelling capability to aid in interpretation of experiments, understand the origin of the phase change behaviour, and guide our experimental colleagues toward compounds with potentially advantageous properties.</p>
+
+
+    <p><strong>Collaborators</strong></p>
+
+    <p>In collaboration with Drs <a href="https://warwick.ac.uk/fac/sci/physics/staff/research/dquigley/">David Quigely</a> and <a href="https://warwick.ac.uk/fac/sci/physics/staff/academic/jsloan/">Jeremy Sloan</a> at the University of Warwick. We predict the structure of tiny crystals that can form inside carbon nanotubes.</p>
+
+    <h1 id="structure-prediction">Structure Prediction</h1>
+    <p><img src="/images/ternary-hull.png" alt="Ternary AIRSS" style="float: left;margin-left: 0px;margin-top: 0px;height: 300px" /></p>
+
+    <p><br /></p>
+
+    <p>In addition to using structure prediction tools to characterise systems of experimentally relevant materials, such as batteries and nanowires, we also develop our own software for crystal structure prediction which builds off of <em>ab  nitio</em> random structure searching (AIRSS).  Developing smarter tools for structure prediction is a key component of identifying new materials, and so our group aims to not only be users but developers as well.</p>
+
+
+    <p><strong>Current Project Members</strong></p>
+
+    <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;Matthew Evans
+        &nbsp;&nbsp;&nbsp;&nbsp;James Darby
+        &nbsp;&nbsp;&nbsp;&nbsp;Angela Harper
+    </ul>
+
+    <p><strong>Software</strong></p>
+
+    <ul>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.castep.org/"><code>CASTEP</code></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.castep.org/Tutorials/AIRSS"><code>AIRSS</code></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://matador.science"><code>matador</code></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.tcm.phy.cam.ac.uk/~me388/ilustrado"><code>ilustrado</code></a></p>
+    </ul>
+
+    <h1 id="theoretical-spectroscopy">Theoretical Spectroscopy</h1>
+    <p><img src="/images/nanotube-dos.png" alt="DOS" style="float: right;margin-right: 0px;margin-top: 0px;height: 350px" /></p>
+
+    <p>Producing high-quality density of states plots from Kohn-Sham eigenvalues is important for understanding the electronic structure and position of impurity states. Simple Gaussian smearing is ineffective due to the nature of dispersive bulk and localized defect states whereas the linear tetrahedron method is interpolative and will always avoid band crossings.</p>
+
+    <p><a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html"><code>OptaDOS</code></a> is a code for calculating optical, core-level excitation spectra along with full, partial and joint electronic density of states (DOS). At present <a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html"><code>OptaDOS</code></a>interfaces with CASTEP and ONETEP output files, although it is extendible to perform calculations on any set of band eigenvalues and their derivatives generated by any electronic structure code.</p>
+
+    <p><a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html"><code>OptaDOS</code></a> is open source an can be freely <a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/download.html">downloaded</a> by the scientific community and is used by many research groups around the world</p>
+
+    <p><strong>Current Project Members</strong></p>
+
+    <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;Andrew Morris
+        &nbsp;&nbsp;&nbsp;&nbsp;Can Kocer
+    </ul>
+
+    <p><strong>Collaborators</strong></p>
+
+    <p>In collaboration with Prof <a href="http://www.materials.ox.ac.uk/peoplepages/yates.html">Jonathan Yates</a> and Dr <a href="http://www.materials.ox.ac.uk/peoplepages/nicholls.html">Rebecca Nicholls</a> at the University of Oxford we author the <a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html"><code>OptaDOS</code></a> code.</p>
+
+    <p><strong>Software</strong></p>
+
+    <ul>
+          <li><a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html"><code>OptaDOS</code></a></li>
+    </ul>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<section id="contact">
+	<div class="banner">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Contact Us:</h2>
+				</div>
+				<div class="col-lg-6">
+					<ul class="list-inline banner-social-buttons">
+						{% for social in site.social %}
+						<li>
+							<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+</section>
+<!-- /.banner -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">{{ site.copyright }}</p>
+            </div>
+            <div class="col-md-4">
+                {{ site.credits }}
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery Version 1.11.0 -->
+<script src="https://harpaf13.github.io/harper-angela/js/jquery-1.11.0.js"></script>
+
+<!-- Plugin JavaScript -->
+<!-- old <script src="js/jquery.easing.min.js"></script> -->
+<script src="https://harpaf13.github.io/harper-angela/js/jquery.easing.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://harpaf13.github.io/harper-angela/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="https://harpaf13.github.io/harper-angela/js/landing-page.js"></script>
+
