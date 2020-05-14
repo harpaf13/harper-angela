@@ -31,8 +31,6 @@ social:
   - title: linkedin
     url: https://www.linkedin.com/in/andrew-morris-96883024/
 
-header_pages:
-  - news/index.html
 
 exclude:
   - Gemfile

@@ -1,6 +1,6 @@
 ---
 layout: none
-title: Publications
+title: Code
 ---
 
 <!-- Bootstrap Core CSS -->
@@ -39,10 +39,10 @@ title: Publications
                     <a href="../people/index.html">People</a>
                 </li>
                 <li>
-                    <a href="#home">Publications</a>
+                    <a href="../publications/index.html">Publications</a>
                 </li>
                 <li>
-                    <a href="../code/index.html">Code</a>
+                    <a href="#home">Code</a>
                 </li>
                 <li>
                     <a href="../news/index.html">News Archive</a>
@@ -76,28 +76,61 @@ title: Publications
 	</div>
 	<!-- /.intro-header -->
 </section>
+<div class="content-section-a">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h2 id="software-we-develop">Software We Develop</h2>
 
-{% assign counter = 1 %}
-{% for post in site.posts %}
-{% if post.categories contains 'publications' %}
-{% assign counter=counter | plus:1 %}
-{% endif %}
-{% endfor %}
+        <ul>
+              <li><a href="http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html"><code>OptaDOS</code></a> For high-quality density of states, EELS and XANES.</li>
+              <li><a href="http://matador.science"><code>matador</code></a> Our structure dataabse and data tool.</li>
+              <li><a href="http://www.tcm.phy.cam.ac.uk/~me388/ilustrado"><code>ilustrado</code></a> Our Genetic Algorithm program.</li>
+              <li><img src="https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-03-21/334235045829_1d1db85d6877560365df_512.png" width="30" /> <a href="https://bitbucket.org/AJM_Group/">Our BitBucket</a></li>
+        </ul>
 
-{% for post in site.posts %}
-{% if post.categories contains 'publications' %}
-{% assign label=counter | minus:1 %}
+<h2 id="group-theses-library">Group Theses Library</h2>
 
-        <div class="container">
+        <ul>
+              <li><em>“Ab Initio Prediction of Metal Phosphide Anode Materials for Lithium and Beyond Lithium Batteries”</em>, Angela F Harper, (2018) <a href="https://doi.org/10.17863/CAM.30542">MPhil</a></li>
+              <li><em>“First Principles Structure Prediction of Extreme Nanowires”</em>, Jamie M Wynn, (2018) <a href="https://www.repository.cam.ac.uk/handle/1810/282997">PhD</a></li>
+              <li><em>“Ab Initio Anode Materials Discovery for Li- and Na-Ion Batteries”</em>, Martin D.Mayo, (2017) <a href="https://www.repository.cam.ac.uk/handle/1810/270545">PhD</a></li>
+              <li><em>“A Stochastic Approach To Condensed Matter Physics”</em>, Andrew J. Morris, (2009) <a href="/files/Andrew_Morris_thesis_18Jan2010.pdf">PhD</a></li>
+        </ul>
 
-            <div class="row">
-                <h4>&nbsp;{{ label }}. {% if post.oa %} <a href="{{ post.oa }}"><img src="https://harpaf13.github.io/harper-angela/images/OA.png" style="height : 20px"></a> {% endif %} {% if post.arx %} <a href="{{ post.arx }}"><img src="https://harpaf13.github.io/harper-angela/images/arx.png" style="height : 20px"></a> {% endif %} "{{ post.title }}", {{ post.authors }},  <i>{{ post.journal }}</i>, <b>{{ post.volume}}</b>, {{ post.pages }} ({{ post.year }}) <a href="http://doi.org/{{ post.doi }}">DOI: {{ post.doi }}</a>  {{ post.content | remove: '<p>' | remove: '</p>' }}</h4>
-{% assign counter=label %}
-                </div>
-            </div>
 
-{% endif %}
-{% endfor %}
+<h2 id="open-access-data">Open-Access Data</h2>
+
+        <h3 id="electrodes">Electrodes</h3>
+        <ul>
+              <li>“Research data supporting “Structural Evolution of Electrochemically Lithiated MoS2 Nanosheets and the Role of Carbon Additive in Li-Ion Batteries” <a href="https://www.repository.cam.ac.uk/handle/1810/260253">Data</a></li>
+              <li>“Research data supporting: “(De)Sodiation via Helical Phosphorus Intermediates in High Capacity Anodes for Sodium-ion Batteries” <a href="https://www.repository.cam.ac.uk/handle/1810/277264">Data</a></li>
+              <li>“Research data supporting “Investigating Sodium Storage Mechanisms in Tin Anodes: A Combined Pair Distribution Function Analysis, Density Functional Theory, and Solid-State NMR Approach”” <a href="https://www.repository.cam.ac.uk/handle/1810/264373">Data</a></li>
+        </ul>
+
+        <h3 id="molecular-crystals">Molecular Crystals</h3>
+        <ul>
+              <li>“Raw data for the study of colour properties of fluorescein in the solid state” <a href="https://www.repository.cam.ac.uk/handle/1810/249125">Data</a></li>
+              <li>“Research data supporting “Experimental and theoretical evaluation of the stability of true MOF polymorphs explains their mechanochemical interconversions” <a href="https://www.repository.cam.ac.uk/handle/1810/271569">Data</a></li>
+        </ul>
+
+        <h3 id="encapsulated-nanotubes">Encapsulated Nanotubes</h3>
+        <ul>
+              <li>“Research data supporting ‘Phase diagram of germanium telluride encapsulated in carbon nanotubes from first-principles searches” <a href="https://www.repository.cam.ac.uk/handle/1810/270277">Data</a></li>
+              <li>“Research data supporting “Single-Atom Scale Structural Selectivity in Te Nanowires Encapsulated Inside Ultranarrow, Single-Walled Carbon Nanotubes” <a href="https://www.repository.cam.ac.uk/handle/1810/264203">Data</a></li>
+        </ul>
+
+<h2 id="links-to-software-we-use">Links to Software we use</h2>
+
+        <ul>
+            <li><a href="http://www.castep.org/"><code>CASTEP</code></a></li>
+            <li><a href="http://www.castep.org/Tutorials/AIRSS"><code>AIRSS</code></a></li>
+           <li><a href="http://www.c2x.org.uk"><code>check2xsf</code></a></li>
+        </ul>
+</div>
+</div>
+</div>
+</div>
 
 
 <section id="contact">
