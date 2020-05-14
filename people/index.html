@@ -1,0 +1,313 @@
+---
+layout: none
+title: People
+---
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/landing-page.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="../index.html">{{ site.title }}</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">  
+                <li>
+                    <a class="page-scroll" href="#andrew">Andrew</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#current">Current Group</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#previous">Previous Members</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#home">People</a>
+                </li>
+                <li>
+                    <a href="../publications/index.html">Publications</a>
+                </li>
+                <li>
+                    <a href="../news/index.html">News Archive</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<section id="home">
+<!-- Header -->
+	<div class="intro-header">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-1">
+					<div class="intro-message">
+						<h1>{{ page.title }}</h1>
+						<h3>{{ page.subTitle }}</h3>
+						<hr class="intro-divider">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+	<!-- /.intro-header -->
+</section>
+
+{% for post in site.posts %}
+{% if post.categories contains 'andrew' %}
+    <section id="andrew" class="container content-section text-center">
+    
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{post.title}}</h2>
+                    <div class="lead">
+                        {{ post.content }}
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    </section>
+{% endif %}
+{% endfor %}
+
+
+<section id="current" class="container content-section text-center">
+<hr class="section-heading-spacer">
+<div class="clearfix"></div>
+<h1 class="section-heading">Current Group Members</h1>
+{% for post in site.posts %}
+{% if post.categories contains 'current' %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}<h3>{{post.position}}</h3></h2>
+                    <div class="lead">
+                    {{ post.content }}
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <!-- again this is really bad to just put brs there -->
+                    <br><br><br>
+                    <br><br>
+                    <img class="img-responsive img-circle" src="https://harpaf13.github.io/harper-angela/{{ post.photo }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}<h3>{{post.position}}</h3></h2>
+                    <div class="lead">
+                    {{ post.content }}
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <br><br><br>
+                    <br><br>
+                    <img class="img-responsive img-circle" src="https://harpaf13.github.io/harper-angela/{{ post.photo }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+    {% endif %}
+{% endfor %}
+</section>
+
+<section id="previous" class="container content-section text-center">
+<hr class="section-heading-spacer">
+<div class="clearfix"></div>
+<h1 class="section-heading">Previous Group Members</h1>
+{% for post in site.posts %}
+{% if post.categories contains 'previous' %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}<h3>{{post.postmorris}}</h3></h2>
+                    <div class="lead">
+                    {{ post.content }}
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <!-- again this is really bad to just put brs there -->
+                    <br><br><br>
+                    <br><br>
+                    <img class="img-responsive img-circle" src="https://harpaf13.github.io/harper-angela/{{ post.photo }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}<h3>{{post.postmorris}}</h3></h2>
+                    <div class="lead">
+                    {{ post.content }}
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <br><br><br>
+                    <br><br>
+                    <img class="img-responsive img-circle" src="https://harpaf13.github.io/harper-angela/{{ post.photo }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+    {% endif %}
+{% endfor %}
+</section>
+
+<section id="contact">
+	<div class="banner">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Contact Us:</h2>
+				</div>
+				<div class="col-lg-6">
+					<ul class="list-inline banner-social-buttons">
+						{% for social in site.social %}
+						<li>
+							<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+</section>
+<!-- /.banner -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">{{ site.copyright }}</p>
+            </div>
+            <div class="col-md-4">
+                {{ site.credits }}
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery Version 1.11.0 -->
+<script src="https://harpaf13.github.io/harper-angela/js/jquery-1.11.0.js"></script>
+
+<!-- Plugin JavaScript -->
+<!-- old <script src="js/jquery.easing.min.js"></script> -->
+<script src="https://harpaf13.github.io/harper-angela/js/jquery.easing.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://harpaf13.github.io/harper-angela/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="https://harpaf13.github.io/harper-angela/js/landing-page.js"></script>
+
