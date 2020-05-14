@@ -1,31 +1,8 @@
-# Landing Page Jekyll theme
+#AJM Group Website 
 
-Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/)
+This is the group website of Dr. Andrew J. Morris a Senior Birmingham Fellow at the University of Birmingham UK.
 
-## How to use
- - Place a image in `/img/services/`
- - Create posts to display your services. Use the follow as an example:
-
-```txt
----
-layout: default
-img: ipad.png
-category: Services
-title: The service title
----
-The description of this service
-```
-
-## Demo
-View this jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
-
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/swcool/landing-page-theme/master/img/screenshot.png)
-
-===
-
-For more Jekyll details, read [documentation](http://jekyllrb.com/).
-This Jekyll theme used [Freelancer Jekyll theme](https://github.com/jeromelachaud/freelancer-theme/) as reference.
+The website was designed based on the [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/) and maintained by [Angela Harper](http://harpaf13.github.io).
 
 ## License
 The contents of this repository are licensed under the [Apache
