@@ -1,6 +1,7 @@
 <section id="news">
 <!-- Page Content -->
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:5 %}
+{% if post.categories contains 'news' %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="content-section-a">
@@ -56,6 +57,7 @@
 
     </div>
     <!-- /.content-section-b -->
+    {% endif %}
     {% endif %}
 {% endfor %}
 </section>
