@@ -2544,6 +2544,12 @@ select[multiple].input-lg {
   line-height: 34px;
   text-align: center;
 }
+.center {
+      display: block;
+        margin-left: auto;
+          margin-right: auto;
+            width: 50%;
+}
 .input-lg + .form-control-feedback {
   width: 46px;
   height: 46px;
